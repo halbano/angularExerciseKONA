@@ -1,2 +1,0 @@
-# angularExerciseKONA
-Recruiting exercise
