@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="MobileAngularUiExamples" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Angular Exercise</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+
+    <link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-hover.min.css"/>
+    <link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-base.min.css"/>
+    <link rel="stylesheet" href="bower_components/mobile-angular-ui/dist/css/mobile-angular-ui-desktop.min.css"/>
+
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body ng-app="MobileAngularUiExamples" ng-controller="MainController">
+
+<!-- Sidebars -->
+<div ng-include="'templates/sidebar.html'" class="sidebar sidebar-left" toggleable parent-active-class="sidebar-left-in" id="mainSidebar"></div>
+<div class="app">
+
+    <!-- Navbars -->
+
+    <div class="navbar navbar-app navbar-absolute-top">
+        <div class="navbar-brand navbar-brand-center" yield-to="title">
+            <span>Employees</span>
+        </div>
+        <div class="btn-group pull-left">
+            <div ng-click="toggle('mainSidebar')" class="btn btn-navbar sidebar-toggle">
+                <i class="fa fa-bars"></i> Menu
+            </div>
+        </div>
+
+        <div class="btn-group pull-right" yield-to="navbarAction">
+            <div class="btn btn-navbar ng-scope" ng-hide="currentPath != '/'">
+               <a href="#/addnew"> <i class="fa fa-user"></i> Add New </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- App Body -->
+    <div class="app-body" ng-class="{loading: loading}">
+        <div ng-show="loading" class="app-content-loading">
+            <i class="fa fa-spinner fa-spin loading-spinner"></i>
+        </div>
+
+        <ng-view class="app-content" ng-hide="loading"></ng-view>
+    </div>
+
+</div>
+<!-- ~ .app -->
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="controllers/mainController.js"></script>
+
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular-touch.min.js"></script>
+<script src="bower_components/mobile-angular-ui/dist/js/mobile-angular-ui.min.js"></script>
+
+</body>
+</html>

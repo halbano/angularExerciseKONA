@@ -1,0 +1,98 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+img {
+  border-radius: 50%;
+  width: 90px;
+}
+
+.name{
+  height: 70px;
+  padding-top: 10px;
+}
+.header {
+  width: 450px;
+  float: left;
+}
+
+.avatar {
+  float: left;
+  margin-right: 2%;
+}
+
+.status {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.withLove {
+  padding-left: 15px;
+}
+
+/*input#radioMale {*/
+  /*margin-left: 25px;*/
+/*}*/
+/*input#radioFemale {*/
+  /*margin-left: 5px;*/
+/*}*/
+
+a.item-list {
+  color: black !important;
+  text-decoration: none !important;
+}
+
+/*
+  -- Hack to beatu the input file
+*/
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
