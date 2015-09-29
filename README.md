@@ -49,11 +49,11 @@ http-server -a localhost -p 8000
 
 # Refs
 
-[git]: http://git-scm.com/
-[bower]: http://bower.io
-[npm]: https://www.npmjs.org/
-[node]: http://nodejs.org
-[http-server]: https://github.com/nodeapps/http-server
+git: http://git-scm.com/
+bower: http://bower.io
+npm: https://www.npmjs.org/
+node: http://nodejs.org
+http-server: https://github.com/nodeapps/http-server
 
 
 
