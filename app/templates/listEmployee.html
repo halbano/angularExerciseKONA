@@ -4,6 +4,11 @@
 <div class="scrollable">
     <div class="scrollable-content">
         <!-- Add the cards here -->
+        <div class="col-sm-4 person-item" ng-repeat="employee in employees" ng-click="setPerson(employee)">
+        	<img ng-src="{{ employee.medium }}" />
+        	<span>{{ employee.first }}</span>
+        	<i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
     </div>
 </div>
 
