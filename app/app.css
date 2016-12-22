@@ -38,6 +38,7 @@ img {
   height: 70px;
   padding-top: 10px;
 }
+
 .header {
   width: 450px;
   float: left;
@@ -60,12 +61,61 @@ img {
   padding-left: 15px;
 }
 
-/*input#radioMale {*/
-  /*margin-left: 25px;*/
-/*}*/
-/*input#radioFemale {*/
-  /*margin-left: 5px;*/
-/*}*/
+.person-item {
+  background-color: #FFFFFF;
+  padding: 8px 16px;
+  border: 0.5px solid #ddd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.person-item {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.app-content {
+  background-color: #FFFFFF;
+}
+
+.separator {
+  width: 100%;
+  border-bottom: solid 1px;
+    height: 1px;
+  margin: 12px 0;
+  display: block;
+    position: relative;
+    top: -3px;
+    border-color: #dce0e0;
+}
+
+h3 {
+  color: #929599;
+}
+
+#addEmployee input:not([type=radio]), #editEmployeeForm input:not([type=radio]), form p {
+  width: 75%;
+  margin-right: 16px;
+  margin-left: auto;
+  display: inline-block;
+  float: right;
+}
+
+#addEmployee input[type=radio], #editEmployeeForm input[type=radio] {
+  margin-left: 25%;
+}
+
+#addEmployee label, #addEmployee h3, #addEmployee button,
+#editEmployeeForm label, #editEmployeeForm h3, #editEmployeeForm button {
+  margin-left: 16px;
+}
+
+#addEmployee h3, #editEmployeeForm h3 {
+  margin-top: 16px;
+}
 
 a.item-list {
   color: black !important;
@@ -80,6 +130,7 @@ a.item-list {
   position: relative;
   overflow: hidden;
 }
+
 .btn-file input[type=file] {
   position: absolute;
   top: 0;

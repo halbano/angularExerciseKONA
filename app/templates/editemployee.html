@@ -1,0 +1,63 @@
+<form id="editEmployeeForm" name="editEmployeeForm">
+    <h3>Basic</h3>
+    <span class="separator"></span>
+    
+    <div class="form-group">
+        <label>First</label>
+        <input required class="form-control" placeholder="First name:" name="first" ng-model="editEmployee.first">
+    </div>
+
+    <div class="form-group">
+        <label>Last</label>
+        <input required class="form-control" placeholder="Last name:" name="last" ng-model="editEmployee.last">
+    </div>
+
+    <div class="form-group">
+        <label>Gender</label>
+        <p>
+            <input type="radio" ng-model="editEmployee.gender" value="male">
+            <span>Male<span>
+        </p>
+        <p>
+            <input type="radio" ng-model="editEmployee.gender" value="female">
+            <span>Female</span>
+        </p>
+    </div>
+
+    <h3>Address</h3>
+    <span class="separator"></span>
+
+    <div class="form-group">
+        <label>State</label>
+        <input class="form-control" placeholder="State:" ng-model="editEmployee.state">
+    </div>
+
+    <div class="form-group">
+        <label>City</label>
+        <input class="form-control" placeholder="City:" ng-model="editEmployee.city">
+    </div>
+
+    <div class="form-group">
+        <label>Street</label>
+        <input class="form-control" placeholder="Street:" ng-model="editEmployee.street">
+    </div>
+
+
+    <h3>Contact</h3>
+    <span class="separator"></span>
+
+    <div class="form-group">
+        <label>E-mail</label>
+        <input required class="form-control" placeholder="E-mail:" name="email" ng-model="editEmployee.email">
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        <input class="form-control" placeholder="Phone:" ng-model="editEmployee.phone">
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-primary" ng-click="save()">Save employee</button>
+    </div>
+
+</form>

@@ -1,0 +1,63 @@
+<form id="addEmployee" name="addEmployee">
+    <h3>Basic</h3>
+    <span class="separator"></span>
+    
+    <div class="form-group">
+        <label>First</label>
+        <input required name-validator class="form-control" placeholder="First name:" name="first" ng-model="newEmployee.first" ng-model-options="{ updateOn: 'blur' }">
+    </div>
+
+    <div class="form-group">
+        <label>Last</label>
+        <input required name-validator class="form-control" placeholder="Last name:" name="last" ng-model="newEmployee.last" ng-model-options="{ updateOn: 'blur' }">
+    </div>
+
+    <div class="form-group">
+        <label>Gender</label>
+        <p>
+            <input type="radio" ng-model="newEmployee.gender" value="male">
+            <span>Male<span>
+        </p>
+        <p>
+            <input type="radio" ng-model="newEmployee.gender" value="female">
+            <span>Female</span>
+        </p>
+    </div>
+
+    <h3>Address</h3>
+    <span class="separator"></span>
+
+    <div class="form-group">
+        <label>State</label>
+        <input class="form-control" placeholder="State:" ng-model="newEmployee.state">
+    </div>
+
+    <div class="form-group">
+        <label>City</label>
+        <input class="form-control" placeholder="City:" ng-model="newEmployee.city">
+    </div>
+
+    <div class="form-group">
+        <label>Street</label>
+        <input class="form-control" placeholder="Street:" ng-model="newEmployee.street">
+    </div>
+
+
+    <h3>Contact</h3>
+    <span class="separator"></span>
+
+    <div class="form-group">
+        <label>E-mail</label>
+        <input required class="form-control" placeholder="E-mail:" name="email" ng-model="newEmployee.email" ng-model-options="{ updateOn: 'blur' }">
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        <input class="form-control" placeholder="Phone:" ng-model="newEmployee.phone">
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" ng-click="create()">Create employee</button>
+    </div>
+
+</form>
