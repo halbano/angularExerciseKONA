@@ -16,15 +16,5 @@ app.config(function ($routeProvider) {
             controller: "MainController"
     });
 
-    $routeProvider.when('/users/new', { 
-            templateUrl: "templates/usersFormView.html",
-            controller: "MainController"
-    });
-
-    $routeProvider.when('/users/:id/edit', { 
-            templateUrl: "templates/usersFormView.html",
-            controller: "MainController"
-    });
-
     $routeProvider.when('/about', {templateUrl: "templates/about.html"});
 });
