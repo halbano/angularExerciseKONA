@@ -2,8 +2,63 @@
        placeholder="Search.."/>
 
 <div class="scrollable">
-    <div class="scrollable-content">
         <!-- Add the cards here -->
-    </div>
+	<div class="panel panel-default">
+		  <!-- Default panel contents -->
+		<!-- Table -->
+		<table class="table table-hover">
+		  <thead>
+            <tr>
+                <th>Attribute 1</th>
+                <th>Attribute 2</th>
+                <th>Attribute 3</th>
+                <th></th>
+                <th></th>
+
+            </tr>
+          </thead>
+	        <tbody>
+	            <tr>
+	                <td>
+	                    Data 1
+	                </td>
+	                <td>
+	                    Data 2
+	                </td>
+	                <td >
+	                    Data 3
+	                </td>
+	                <td>
+						<button type="button" class="btn btn-primary">Edit</button>
+	                </td>
+	                <td>
+						<button type="button" class="btn btn-danger">Delete</button>
+	                </td>
+	            </tr>
+	            <tr>
+	                <td>
+	                    Data 1
+	                </td>
+	                <td>
+	                    Data 2
+	                </td>
+	                <td >
+	                    Data 3
+	                </td>
+	                <td>
+						<button type="button" class="btn btn-primary">Edit</button>
+	                </td>
+	                <td>
+						<button type="button" class="btn btn-danger">Delete</button>
+	                </td>
+	            </tr>
+	           <!--  <tr ng-if="!interactions.length">
+	                <td class="text-center" colspan="9">
+	                    {{ 'reports.empty' | translate }}
+	                </td>
+	            </tr> -->
+	        </tbody>
+		</table>
+	</div>
 </div>
 
